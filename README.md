@@ -1,4 +1,4 @@
-# diffusion-kafka-app-L1
+# diffusion-dynasystem-app-L1
 
 Introduction to Diffusion Real-Time Data Store through a simple application using [Diffusion](https://www.pushtechnology.com/product-overview) Cloud.
 
