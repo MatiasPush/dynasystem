@@ -19,26 +19,25 @@ diffusion.connect({
 ## **Step 2: Create a Topic**
 ### [session.topics.add](https://docs.pushtechnology.com/docs/6.5.1/js/interfaces/topiccontrol.html#add)
 ```js
-session.topics.add(_roomTopic, diffusion.topics.TopicType.JSON);
+session.topics.add(_Topic, diffusion.topics.TopicType.JSON);
 ```
 ### Go to: [Diffusion Cloud > Manage Service > Console > Topics](https://management.ad.diffusion.cloud/#!/login)
-We are seeting up `_roomTopic` with the topic path: `Chat/Default Room`
 ![](https://github.com/pushtechnology/tutorials/blob/master/messaging/diffusion-msg-app-L1/images/topics.png)
 
 ## **Step 3: Create a Topic Listener**
 ### [session.addStream](https://docs.pushtechnology.com/docs/6.5.1/js/interfaces/session.html#addstream)
 ```js
-session.addStream(_roomTopic, diffusion.datatypes.json());
+session.addStream(_Topic, diffusion.datatypes.json());
 ```
 ## **Step 4: Subscribe to a Topic**
 ### [session.select](https://docs.pushtechnology.com/docs/6.5.1/js/interfaces/session.html#select)
 ```js
-session.select(_roomTopic);
+session.select(_Topic);
 ```
 ## **Step 5: Update a Topic**
 ### [session.topicUpdate.set](https://docs.pushtechnology.com/docs/6.5.1/js/interfaces/topicupdate.html#set)
 ```js
-session.topicUpdate.set(_roomTopic, diffusion.datatypes.json(),
+session.topicUpdate.set(_Topic, diffusion.datatypes.json(),
 	{
 		text: msg,
 		name: name,
